@@ -52,7 +52,7 @@ def run_scan(port, is_vn=True):
     Trả về True nếu dừng sớm."""
     clear_file(OUTPUT_FILE)
     print(f"[THÔNG BÁO] Bắt đầu quét cổng {port} ({'VN' if is_vn else 'US'})...")
-    input_file = "vt.txt" if is_vn else "all.txt"
+    input_file = "vn.txt" if is_vn else "all.txt"
     if not os.path.exists(input_file):
         print(f"[LỖI] Tệp {input_file} không tồn tại!")
         return False
